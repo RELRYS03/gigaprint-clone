@@ -55,6 +55,38 @@ O README oficial de `morluto/rea` descreve uma ferramenta de engenharia reversa 
 - Funcionalidades de ferramentas: **não medidas**; ainda não implementadas localmente.
 - Fidelidade global: **não pontuada**; homepage foi aproximada usando estrutura/textos extraídos, sem validação visual quantitativa.
 
+## Auditoria detalhada — Giant print / STL splitter (18/11/2026)
+
+A interface foi aberta em navegador real e inspecionada sem enviar arquivos, iniciar exportações ou autenticar.
+
+### Estrutura observada
+- Cabeçalho com logo GigaPrint, links sociais, Open the app, Home, All tools, Suggest a generator, seletor English e acesso Sign in · 2 free · no card.
+- Título: “Free online STL splitter for 3D printing”.
+- Descrição confirma suporte a STL, OBJ e 3MF e processamento local.
+- Amostra inicial: `giant-robot.stl`, dimensões 1038.3 × 648.7 × 1828.8 mm, 138 partes.
+- Legenda de cama de impressão (verde/vermelho), área de exclusão Bambu e referências de escala.
+- Visões: 3D, Front, Top, Side, Wire, Fit e Build volume.
+- Ferramentas da visualização: Explode, Assemble, IDs, Bed check, Infill, Joint check, Scale ref e Reset view.
+- Controles de modelo: Open model, Sample model, rotações X/Y/Z, Mirror, Lay flat e Undo.
+- Dimensões finais X/Y/Z, Scale %, seleção de impressora, dimensões customizadas, margem de segurança, orientação e cama redonda.
+- Cortes: Count com modo smart (“Follow the shape”).
+- Juntas: Pegs, Dowel pins, Snap clips, Dovetail slide, Magnets, Step lip e Flat. Clearance padrão observado: 0.2 mm.
+- Preparação: marcar IDs, hollow before splitting e orientar cada parte para melhor face.
+- Ações: Split model, Download your parts (ZIP) e 3MF plates.
+
+### Regras funcionais confirmadas pela página
+- O modo gratuito permite até 4 peças com pegs ou faces planas e joint fit check.
+- Mais peças, outros tipos de junta, planos de corte personalizados, cunhas radiais, costuras alternadas, várias impressoras, hollowing e saída 3MF são Pro.
+- Exportações descritas: STL, multi-object 3MF, 3MF build plates e PDF de montagem.
+- A página declara que o modelo é processado no navegador e não enviado ao servidor.
+- A verificação de encaixe identifica furos incompatíveis, folgas e paredes finas.
+
+### Estado de implementação
+A interface e o motor geométrico desta ferramenta **ainda não foram implementados** no clone. Esta auditoria registra o comportamento real para orientar a próxima etapa; não transforma os controles em elementos decorativos nem declara exportação funcional.
+
+### Build
+GitHub Actions Build dos commits de homepage e documentação concluído com **success**. Isso valida compilação Vite/React, não fidelidade visual nem funcionalidades 3D.
+
 ## Auditoria inicial da página inicial
 
 A inspeção textual inicial identificou o GigaPrint como um workbench 3D que roda no navegador, com arquivos permanecendo no dispositivo. A página anuncia importação de STL, OBJ e 3MF; exportação de STL, 3MF, SVG e PDF conforme a ferramenta; prévias gratuitas; e estimativas de filamento, custo e tempo.

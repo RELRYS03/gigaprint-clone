@@ -6,6 +6,7 @@ import {
   Sparkles, Wrench, X, Printer, Image, Lamp, Home, Scissors, Package
 } from "lucide-react";
 import "./styles.css";
+import GiantPrint from "./GiantPrint.jsx";
 
 const categories = [
   { label: "All tools", href: "#all-tools" },
@@ -163,4 +164,5 @@ function App() {
   );
 }
 
-createRoot(document.getElementById("root")).render(<React.StrictMode><App/></React.StrictMode>);
+const Root = window.location.pathname.replace(/\\/$/, "") === "/stl-splitter" ? GiantPrint : App;
+createRoot(document.getElementById("root")).render(<React.StrictMode><Root/></React.StrictMode>);

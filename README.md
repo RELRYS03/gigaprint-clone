@@ -27,6 +27,34 @@ Reconstrução independente do site https://gigaprint.app/, usando o site origin
 - Os cartões de ferramentas ainda encaminham para o site original; as ferramentas não foram reconstruídas.
 - Não há confirmação registrada de build bem-sucedido nem comparação visual final com o original.
 
+## Auditoria e reconstrução — etapa 1
+
+Inspeção direta do conteúdo público do site em 18/11/2026:
+- A homepage apresenta “GigaPrint: make print-ready STL files in seconds”, resumo do workbench, confiança sobre arquivos locais, “Popular generators”, “All tools”, pricing, perguntas frequentes e comunidade.
+- A navegação inclui coleções de ferramentas, calculadoras, guias, páginas institucionais e suporte.
+- Captura textual/HTML e lista de links foram obtidas para a homepage; também foram inspecionadas as páginas públicas de Giant print, Home organization, Calculators e Guides.
+- A página Giant print confirma importação STL/OBJ/3MF, presets de mais de 50 impressoras, cortes automáticos/personalizados/radiais, juntas e exportação STL/3MF/PDF, com limites Free/Pro.
+- A coleção Home organization confirma drawer bins, fitted mat, tool organizer, wall plates, pots and pans e refrigerator organizer.
+- O site anuncia tratamento local no navegador; não reproduzir processamento remoto nem simular exportações que não existam.
+
+### Uso do REA
+O README oficial de `morluto/rea` descreve uma ferramenta de engenharia reversa com inspeção de websites em navegador, estrutura de páginas, scripts, observações de rede e screenshots solicitados. REA é ferramenta auxiliar de observação; não é o código-fonte do GigaPrint. Sua análise local e fluxo MCP exigem instalação/configuração no ambiente do usuário com Node.js e navegador Chromium compatível. Nenhum resultado de execução local do REA foi alegado nesta etapa.
+
+### Implementação da etapa 1
+- Atualizada a homepage com o título e conteúdo textual observados no original.
+- Adicionadas seções de geradores populares, categorias, pricing, FAQ, comunidade e privacidade.
+- Imagens dos cartões populares referenciam ativos públicos de ferramentas observadas no próprio domínio GigaPrint.
+- O catálogo permanece uma amostra explicitamente identificada, não uma lista completa.
+- Ferramentas continuam apontando para as rotas originais; não foram inventadas interfaces de ferramenta nem exportações falsas.
+- Incluída busca e filtro local por categorias na amostra implementada.
+- CSS responsivo preparado para desktop, tablet e mobile, mas ainda sem comparação por screenshots em três breakpoints.
+
+### Verificação
+- GitHub Actions Build acionado pelos commits da etapa 1; no instante da consulta estava em execução (Node setup em andamento). Aguardar conclusão antes de declarar build aprovado.
+- Pontuação visual: **não medida**. Não há screenshots pareadas do original e clone em desktop/tablet/mobile nesta etapa.
+- Funcionalidades de ferramentas: **não medidas**; ainda não implementadas localmente.
+- Fidelidade global: **não pontuada**; homepage foi aproximada usando estrutura/textos extraídos, sem validação visual quantitativa.
+
 ## Auditoria inicial da página inicial
 
 A inspeção textual inicial identificou o GigaPrint como um workbench 3D que roda no navegador, com arquivos permanecendo no dispositivo. A página anuncia importação de STL, OBJ e 3MF; exportação de STL, 3MF, SVG e PDF conforme a ferramenta; prévias gratuitas; e estimativas de filamento, custo e tempo.

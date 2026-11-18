@@ -164,5 +164,5 @@ function App() {
   );
 }
 
-const Root = window.location.pathname.replace(/\\/$/, "") === "/stl-splitter" ? GiantPrint : App;
+const Root = window.location.pathname.replace(/\/+$/, "") === "/stl-splitter" ? GiantPrint : App;
 createRoot(document.getElementById("root")).render(<React.StrictMode><Root/></React.StrictMode>);

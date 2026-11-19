@@ -117,3 +117,14 @@ npm run preview
 ```
 
 O projeto é independente e não é afiliado ao GigaPrint.
+
+
+## Drawer organizing category page — 19/11/2026
+
+- Added a local category page at `/drawer-organizing` (English) and `/es/drawer-organizing` (Spanish).
+- Recreated the three public collection cards: Drawer organizer, Fitted drawer mat, and Pots and pans drawer.
+- Card artwork is original inline SVG, with a responsive layout.
+- The Home organization category chip now opens the local category page.
+- Cards point to the original public tools until each tool is reconstructed in this repo.
+- No pricing, social links, Instagram, login or subscription UI was added.
+- Implemented in branch `feature/drawer-organizing-category-page`; `main` remains unchanged.

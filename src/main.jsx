@@ -7,10 +7,11 @@ import {
 } from "lucide-react";
 import "./styles.css";
 import GiantPrint from "./GiantPrint.jsx";
+import DrawerOrganizing from "./DrawerOrganizing.jsx";
 
 const categories = [
   { label: "All tools", href: "#all-tools" },
-  { label: "Home organization", href: "https://gigaprint.app/home-organization" },
+  { label: "Home organization", href: "/drawer-organizing" },
   { label: "STL tools", href: "#stl-tools" },
   { label: "Photo to 3D", href: "#photo-to-3d" },
   { label: "Decor", href: "#decor" },
@@ -164,5 +165,10 @@ function App() {
   );
 }
 
-const Root = window.location.pathname.replace(/\/+$/, "") === "/stl-splitter" ? GiantPrint : App;
+const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+const Root = currentPath === "/stl-splitter"
+  ? GiantPrint
+  : currentPath === "/drawer-organizing" || currentPath === "/es/drawer-organizing"
+    ? DrawerOrganizing
+    : App;
 createRoot(document.getElementById("root")).render(<React.StrictMode><Root/></React.StrictMode>);

@@ -59,9 +59,9 @@ const copy = {
     description: "Herramientas para el interior de un cajón: un organizador de cajas a medida, una alfombrilla que encaja y un tablero para ollas y sartenes.",
     category: "ORGANIZACIÓN DEL HOGAR", new: "NUEVO",
     cards: [
-      {title:"Organizador de cajones",description:"Contenedores de cajones e insertos de cocina personalizados. Cajón de cubiertos con un clic para tenedores, cuchillos y cucharas, además de bandejas para utensilios, soportes para especias y más.",action:"Crear un organizador de cubiertos",href:"https://gigaprint.app/es/drawer-organizer",art:DrawerBinsIllustration},
-      {title:"Alfombrilla a medida para cajones",description:"Losetas que encajan y llenan tu cajón exactamente. Elige un patrón y colores, imprime en TPU o en cualquier plástico, y las uniones quedan planas.",action:"Hacer una alfombrilla de cajón",href:"https://gigaprint.app/es/drawer-mat-generator",art:DrawerMatIllustration,isNew:true},
-      {title:"Cajón para ollas y sartenes",description:"Un tablero con clavos extraíbles alrededor de tus ollas, un soporte vertical para sartenes y bandejas, y un soporte para tapas. A la medida de tu cajón y dividido en losetas que caben en tu placa.",action:"Organizar el cajón de ollas",href:"https://gigaprint.app/?lang=es#potsdrawer",art:PotsDrawerIllustration,isNew:true}
+      {title:"Organizador de cajones",description:"Contenedores de cajones e insertos de cocina personalizados. Cajón de cubiertos con un clic para tenedores, cuchillos y cucharas, además de bandejas para utensilios, soportes para especias y más.",action:"Crear un organizador de cubiertos",href:"/reference/index.html?embed=1&lang=es#drawer",art:DrawerBinsIllustration},
+      {title:"Alfombrilla a medida para cajones",description:"Losetas que encajan y llenan tu cajón exactamente. Elige un patrón y colores, imprime en TPU o en cualquier plástico, y las uniones quedan planas.",action:"Hacer una alfombrilla de cajón",href:"/reference/index.html?embed=1&lang=es#drawermat",art:DrawerMatIllustration,isNew:true},
+      {title:"Cajón para ollas y sartenes",description:"Un tablero con clavos extraíbles alrededor de tus ollas, un soporte vertical para sartenes y bandejas, y un soporte para tapas. A la medida de tu cajón y dividido en losetas que caben en tu placa.",action:"Organizar el cajón de ollas",href:"/reference/index.html?embed=1&lang=es#potsdrawer",art:PotsDrawerIllustration,isNew:true}
     ]
   },
   en: {
@@ -71,9 +71,9 @@ const copy = {
     description: "Every GigaPrint tool for the inside of a drawer: custom-fit bins, a snap-together mat and a pegboard for pots and pans.",
     category: "HOME ORGANIZATION", new: "NEW",
     cards: [
-      {title:"Drawer organizer",description:"Custom drawer bins and kitchen inserts. Make a silverware drawer for forks, knives and spoons, plus utensil trays, spice cradles and more.",action:"Create a drawer organizer",href:"https://gigaprint.app/drawer-organizer",art:DrawerBinsIllustration},
-      {title:"Fitted drawer mat",description:"Snap-together tiles that fill your drawer exactly. Choose a pattern and colors, print in TPU or any plastic, and keep the joints flat.",action:"Make a fitted drawer mat",href:"https://gigaprint.app/drawer-mat-generator",art:DrawerMatIllustration,isNew:true},
-      {title:"Pots and pans drawer",description:"A pegboard with removable pegs around your pots, a vertical pan rack and a lid rack. Sized to your drawer and split into tiles that fit your build plate.",action:"Organize a pots and pans drawer",href:"https://gigaprint.app/#potsdrawer",art:PotsDrawerIllustration,isNew:true}
+      {title:"Drawer organizer",description:"Custom drawer bins and kitchen inserts. Make a silverware drawer for forks, knives and spoons, plus utensil trays, spice cradles and more.",action:"Create a drawer organizer",href:"/reference/index.html?embed=1&lang=en#drawer",art:DrawerBinsIllustration},
+      {title:"Fitted drawer mat",description:"Snap-together tiles that fill your drawer exactly. Choose a pattern and colors, print in TPU or any plastic, and keep the joints flat.",action:"Make a fitted drawer mat",href:"/reference/index.html?embed=1&lang=en#drawermat",art:DrawerMatIllustration,isNew:true},
+      {title:"Pots and pans drawer",description:"A pegboard with removable pegs around your pots, a vertical pan rack and a lid rack. Sized to your drawer and split into tiles that fit your build plate.",action:"Organize a pots and pans drawer",href:"/reference/index.html?embed=1&lang=en#potsdrawer",art:PotsDrawerIllustration,isNew:true}
     ]
   }
 };

@@ -128,3 +128,8 @@ O projeto é independente e não é afiliado ao GigaPrint.
 - Cards point to the original public tools until each tool is reconstructed in this repo.
 - No pricing, social links, Instagram, login or subscription UI was added.
 - Implemented in branch `feature/drawer-organizing-category-page`; `main` remains unchanged.
+
+
+## Expressarte Grid integration
+
+The GigaPrint workbench modules from the user's `expressarte-grid` repository are staged under `public/reference/`. Open `/reference/index.html?lang=pt` or the drawer editor at `/reference/index.html?embed=1&lang=pt#drawer`. See [`docs/EXPRESSARTE_GRID_INTEGRATION.md`](docs/EXPRESSARTE_GRID_INTEGRATION.md) and [`reference/THIRD_PARTY_NOTICES.txt`](reference/THIRD_PARTY_NOTICES.txt). Images, fonts and sample binaries still use the public `gigaprint.app` host.

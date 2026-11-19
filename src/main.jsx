@@ -19,20 +19,20 @@ const categories = [
 ];
 
 const tools = [
-  { title: "Giant print (STL splitter)", description: "Split big STL, OBJ and 3MF models into bed-sized blocks, add alignment joints and get an assembly sheet.", category: "STL tools", icon: Layers3, tag: "Popular", href: "https://gigaprint.app/stl-splitter", image: "https://gigaprint.app/img/tools/split.webp" },
-  { title: "Drawer organizer", description: "Design custom-fit drawer bins, silverware trays, utensil holders and spice cradles.", category: "Home organization", icon: Grid2X2, tag: "Popular", href: "https://gigaprint.app/drawer-organizer", image: "https://gigaprint.app/img/tools/drawer.webp" },
-  { title: "Customize Your Pelican", description: "Create a fitted organizer, grid board, replacement handle or name plate for your case.", category: "Home organization", icon: Package, href: "https://gigaprint.app/customize-your-pelican" },
-  { title: "Phone case generator", description: "Make a custom phone case or a snap-on MacBook shell for your exact device.", category: "Accessories", icon: Box, href: "https://gigaprint.app/phone-case-generator" },
-  { title: "Picture frame maker", description: "Design a custom frame for a photo or art print, with a mat, hanger and printable sections.", category: "Decor", icon: Image, href: "https://gigaprint.app/picture-frame-maker" },
-  { title: "Lithophane maker", description: "Turn a photo into a 3D printable panel that reveals the image when illuminated.", category: "Photo to 3D", icon: Sparkles, href: "https://gigaprint.app/lithophane-maker" },
-  { title: "Multi-color prints from graphic files", description: "Turn a PNG, JPG or SVG into a multi-color print with assigned filaments in a 3MF.", category: "Photo to 3D", icon: Layers3, href: "https://gigaprint.app/multicolor-3d-print-maker" },
-  { title: "Box maker", description: "Create printable boxes with custom dimensions, lids, fit clearance and magnet pockets.", category: "Home organization", icon: FileBox, href: "https://gigaprint.app/box-maker" },
-  { title: "Repair STL", description: "Check and repair common mesh problems in STL, OBJ and 3MF files.", category: "STL tools", icon: Wrench, href: "https://gigaprint.app/stl-repair" },
-  { title: "Separate parts", description: "Find disconnected parts in a model and export individual STL files or a multi-object 3MF.", category: "STL tools", icon: Layers3, href: "https://gigaprint.app/separate-stl-parts" },
-  { title: "Hollow", description: "Shell a model, add drain holes and inspect the inside with a live cross-section.", category: "STL tools", icon: Box, href: "https://gigaprint.app/hollow-stl" },
-  { title: "Mold maker", description: "Create a two-part or multi-piece mold with registration keys and pour openings.", category: "STL tools", icon: Package, href: "https://gigaprint.app/mold-maker" },
-  { title: "Christmas ornament maker", description: "Create heat-formed lattice ornaments with a matching two-part press.", category: "Decor", icon: Sparkles, href: "https://gigaprint.app/christmas-ornament-maker" },
-  { title: "Shadow lamp generator", description: "Turn a character, logo or silhouette into a lamp that projects its image.", category: "Photo to 3D", icon: Lamp, href: "https://gigaprint.app/shadow-lamp-generator" },
+  { title: "Giant print (STL splitter)", description: "Split big STL, OBJ and 3MF models into bed-sized blocks, add alignment joints and get an assembly sheet.", category: "STL tools", icon: Layers3, tag: "Popular", href: "/reference/index.html?embed=1&lang=pt#split", image: "https://gigaprint.app/img/tools/split.webp" },
+  { title: "Drawer organizer", description: "Design custom-fit drawer bins, silverware trays, utensil holders and spice cradles.", category: "Home organization", icon: Grid2X2, tag: "Popular", href: "/reference/index.html?embed=1&lang=pt#drawer", image: "https://gigaprint.app/img/tools/drawer.webp" },
+  { title: "Customize Your Pelican", description: "Create a fitted organizer, grid board, replacement handle or name plate for your case.", category: "Home organization", icon: Package, href: "/reference/index.html?embed=1&lang=pt#pelicancase" },
+  { title: "Phone case generator", description: "Make a custom phone case or a snap-on MacBook shell for your exact device.", category: "Accessories", icon: Box, href: "/reference/index.html?embed=1&lang=pt#phonecase" },
+  { title: "Picture frame maker", description: "Design a custom frame for a photo or art print, with a mat, hanger and printable sections.", category: "Decor", icon: Image, href: "/reference/index.html?embed=1&lang=pt#frame" },
+  { title: "Lithophane maker", description: "Turn a photo into a 3D printable panel that reveals the image when illuminated.", category: "Photo to 3D", icon: Sparkles, href: "/reference/index.html?embed=1&lang=pt#litho" },
+  { title: "Multi-color prints from graphic files", description: "Turn a PNG, JPG or SVG into a multi-color print with assigned filaments in a 3MF.", category: "Photo to 3D", icon: Layers3, href: "/reference/index.html?embed=1&lang=pt#mc" },
+  { title: "Box maker", description: "Create printable boxes with custom dimensions, lids, fit clearance and magnet pockets.", category: "Home organization", icon: FileBox, href: "/reference/index.html?embed=1&lang=pt#box" },
+  { title: "Repair STL", description: "Check and repair common mesh problems in STL, OBJ and 3MF files.", category: "STL tools", icon: Wrench, href: "/reference/index.html?embed=1&lang=pt#repair" },
+  { title: "Separate parts", description: "Find disconnected parts in a model and export individual STL files or a multi-object 3MF.", category: "STL tools", icon: Layers3, href: "/reference/index.html?embed=1&lang=pt#separate" },
+  { title: "Hollow", description: "Shell a model, add drain holes and inspect the inside with a live cross-section.", category: "STL tools", icon: Box, href: "/reference/index.html?embed=1&lang=pt#hollow" },
+  { title: "Mold maker", description: "Create a two-part or multi-piece mold with registration keys and pour openings.", category: "STL tools", icon: Package, href: "/reference/index.html?embed=1&lang=pt#mold" },
+  { title: "Christmas ornament maker", description: "Create heat-formed lattice ornaments with a matching two-part press.", category: "Decor", icon: Sparkles, href: "/reference/index.html?embed=1&lang=pt#ornament" },
+  { title: "Shadow lamp generator", description: "Turn a character, logo or silhouette into a lamp that projects its image.", category: "Photo to 3D", icon: Lamp, href: "/reference/index.html?embed=1&lang=pt#shadowlamp" },
   { title: "3D print cost calculator", description: "Calculate filament, electricity, printer wear, labour, extras and failed prints.", category: "Calculators", icon: Calculator, href: "https://gigaprint.app/3d-print-cost-calculator" },
   { title: "3D print price calculator", description: "Set a selling price using costs, markup or margin, fees, shipping and profit.", category: "Calculators", icon: Calculator, href: "https://gigaprint.app/3d-print-price-calculator" }
 ];
@@ -64,6 +64,7 @@ function App() {
         <a className="brand" href="/" aria-label="GigaPrint home"><span className="brand-mark"><Layers3 size={21}/></span><span>Giga<span>Print</span></span></a>
         <nav className={menuOpen ? "nav nav-open" : "nav"}>
           <a href="#all-tools">All tools</a>
+          <a href="/reference/index.html?lang=pt">Full workbench</a>
           <a href="https://gigaprint.app/guides">Guides</a>
           <a href="https://gigaprint.app/3d-printing-calculators">Calculators</a>
           <a href="https://gigaprint.app/about">About</a>
@@ -84,7 +85,7 @@ function App() {
             <p className="hero-description">GigaPrint is a free, in-browser 3D printing workbench. Split big models into printable parts, make custom organizers, turn photos into 3D prints and export ready-to-print files — all on your own device.</p>
             <div className="hero-actions">
               <a className="button" href="#all-tools">Explore all tools <ArrowRight size={17}/></a>
-              <a className="text-link" href="https://gigaprint.app/stl-splitter">Try the giant print splitter <ArrowUpRight size={15}/></a>
+              <a className="text-link" href="/reference/index.html?embed=1&lang=pt#split">Try the giant print splitter <ArrowUpRight size={15}/></a>
             </div>
             <div className="trust-row"><span><ShieldCheck size={16}/> Files stay on your device</span><span><Sparkles size={16}/> Free previews</span><span><Box size={16}/> STL & 3MF exports</span></div>
           </div>

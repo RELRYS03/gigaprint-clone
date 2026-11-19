@@ -27,6 +27,18 @@ Reconstrução independente do site https://gigaprint.app/, usando o site origin
 - Os cartões de ferramentas ainda encaminham para o site original; as ferramentas não foram reconstruídas.
 - Não há confirmação registrada de build bem-sucedido nem comparação visual final com o original.
 
+## Atualização de implementação — 19/11/2026
+
+Branch de trabalho: `feature/giant-print-functional-scale` (a branch `main` permanece sem alterações).
+
+- O controle **Scale (%)** agora aplica escala uniforme ao modelo carregado na prévia 3D.
+- As dimensões X, Y e Z exibidas acompanham o percentual aplicado.
+- Os controles Mirror X / Mirror Y mantêm o espelhamento ao alterar a escala.
+- O botão Reset da visualização volta a escala para 100% e remove os espelhamentos.
+- A escala atua na prévia local; ainda não existe exportação do modelo redimensionado.
+- A divisão geométrica, geração de juntas e exportações continuam pendentes.
+- Esta alteração foi conferida no arquivo do repositório, mas ainda não foi executada em navegador nem validada por build nesta etapa.
+
 ## Auditoria e reconstrução — etapa 1
 
 Inspeção direta do conteúdo público do site em 18/11/2026:
